@@ -1,0 +1,102 @@
+@font-face {
+    font-family: poppins;
+    src: url(fonts/poppins/Poppins-Regular.ttf);
+}
+
+:root{
+   --site-font: poppins; 
+   --header-color: black;
+   --main-color: white;
+}
+
+body{
+    background-color: #3A0956;
+    margin: 0;
+}
+
+h3{
+    font-family: var(--site-font);
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+header{
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    font-family: var(--site-font);
+    color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+header .logo{
+    width: fit-content;
+    display: flex;
+    margin-left: 50px;
+}
+
+header div img{
+    height: 40px;
+    align-self: center;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li a{
+    margin: 0px 25px;
+    text-align: center;
+    line-height: 60px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.lists li{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.lists li:hover{
+    transform: translateY(-2px);
+    color: black;
+}
+
+.soc-med{
+    width: 120px;
+    height: 60px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.soc-med .fb{
+    height: 30px;
+    width: 30px;
+    background-image: url(images/facebook.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.soc-med .ig{
+    height: 30px;
+    width: 30px;
+    background-image: url(images/instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.soc-med .fb:hover{
+    transform: translateY(-2px);
+}
+
+.soc-med .ig:hover{
+    transform: translateY(-2px);
+}
+
